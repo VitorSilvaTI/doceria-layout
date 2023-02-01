@@ -1,0 +1,430 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Generics */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --main-color: #006599;
+    --text-color-side: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+div.background-image-properties {
+    background-position: center;
+    background-size: cover;
+}
+
+/* section geral */
+
+#geral {
+    display: grid; 
+    grid-template-columns: 1fr auto;
+}
+
+/* sidebar mobile */
+
+.sidebar-mobile {
+    display: none;
+}
+
+.close-button {
+    display: none;
+}
+
+/* sidebar */
+
+.side-bar-confectionery {
+    position: fixed;
+    width: 250px;
+    transition: 1s;
+    height: 100%; 
+    background-color: var(--main-color);
+}
+
+figure {
+    margin-top: 40px;
+    text-align: center;
+}
+
+figure img {
+    width: 60px;
+}
+
+figcaption {
+    font-size: 24px;
+    margin: 30px 0px;
+    font-weight: 400;
+    color: var(--text-color-side);
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+}
+
+nav {
+    width: 120px;
+    margin: 0px auto;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text-color-side);
+}
+
+.menu li a:hover {
+    color: #F4EF5E;
+}
+
+
+.banner-confectionery {
+    height: 500px;
+    transition: 1s;
+    background: url('../img/candy-banner.jpg');
+}
+
+.container {
+    position: relative; 
+    left: 250px; 
+    margin-top: 50px;
+    padding-left: 20px;
+    width: calc(100% - 250px);
+    transition: 1s;
+}
+
+/* home-confectionery */
+
+.title {
+    margin: 32px 0px;
+    font-size: 30px;
+    color: var(--main-color);
+} 
+
+.container-info-candy {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+
+.image-candy {
+    grid-row: 1 / span 2;
+    background: url('../img/candy-tray-banner.jpg');
+}
+
+.text-candy  {
+    margin-left: 25px;
+}
+
+.text p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+    transition: 1s;
+    font-size: 14px;
+}
+ 
+.read-btn, input[type="submit"] {
+    border: 0;
+    width: 100px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    margin: 0px 0px 15px 15px;
+    color: var(--text-color-side);
+    background-color: var(--main-color);
+}
+
+.read-btn:hover, input[type="submit"]:hover {
+    background-color: #007fbe;
+}
+
+/* about-confectionery */
+
+.container-info-about {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.image-about {
+    background: url('../img/confectionery-clerk.jpg');
+}
+
+.text-about {
+    margin-right: 25px;
+}
+
+/* Candy Galery */
+
+.candy1, .candy2, .candy3 {
+    margin-bottom: 60px;
+}
+
+.galery-1,
+.galery-2,
+.galery-3  {
+    display: grid;
+}
+
+.galery-1 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Candy 1 */
+.candy-galery div.image-galery {
+    height: 200px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.galery-1 .img1 {
+    background: url('../img/candy-cane.jpg'); 
+}
+
+.galery-1 .img2 {
+    background: url('../img/candy-jar.jpg');
+}
+
+.galery-1 .img3 {
+    background: url('../img/limon-mousse.jpg');
+}
+
+.galery-1 .img4 {
+    background: url('../img/slice-chocolate-cake.jpg');
+}
+
+.galery-1 .img5 {
+    background: url('../img/small-roulade.jpg');  
+}
+
+/* Candy 2 */
+
+.galery-2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.galery-2 .img1 {
+    background: url('../img/candy-table.jpg');
+}
+
+.galery-2 .img2 {
+    background: url('../img/chocolate-cupcake.jpg');
+}
+
+.galery-2 .img3 {
+    background: url('../img/carrot-cupcake.jpg');
+}
+
+/* Candy 3 */
+
+.galery-3 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.galery-3 .img1 {
+    background: url('../img/pancakes.jpg');
+}
+
+.galery-3 .img2 {
+    background: url('../img/chocolate-cake-coconut.jpg');
+}
+
+.galery-3 .img3 {
+    background: url('../img/blueberry-pie.jpg');
+}
+
+.galery-3 .img4 {
+    background: url('../img/brigadeiro-cake.jpg');
+}
+
+/* contact-confectionery */
+
+form {
+    width: 500px;
+}
+
+form input {
+    display: block;  
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    outline-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+textarea {
+    resize: none;
+}
+
+::placeholder {
+    color: var(--main-color);
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--main-color);
+}
+
+
+@media(max-width: 991px) {
+
+    .side-bar-confectionery {
+        width: 180px;
+        transition: 1s;
+    }
+
+    .container { 
+        left: 180px; 
+        width: calc(100% - 180px);
+        transition: 1s;
+    }
+
+    .text-candy {
+        margin-left: 10px;
+    }
+    
+    .text-about {
+        margin-right: 10px;
+    }
+    
+    .text p {
+        margin-bottom: 14px;
+        line-height: 1;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 640px) {
+
+    .side-bar-confectionery {
+        width: 160px;
+        transition: 1s;
+    }
+
+    .container { 
+        left: 160px; 
+        width: calc(100% - 160px);
+        transition: 1s;
+    }
+
+    .title {
+        font-size: 21px;
+    }
+}
+
+
+
+@media(max-width: 630px) {
+
+    .side-bar-confectionery {
+        display: none;
+        right: 0;
+        z-index: 1;
+        width: 50%;
+        transition: 1s;
+    }
+
+    figcaption {
+        font-size: 18px;
+    }
+
+    nav {
+        width: 80%;
+        margin-bottom: -5px;
+    }
+
+    .banner-confectionery {
+        height: 250px;
+    }
+
+    .container {
+        left: 0;
+        width: 100%;        
+    }
+
+    .container-info-candy,
+    #geral,
+    .container-info-about,
+    .sidebar-mobile,
+    .close-button,
+    .galery-1,
+    .galery-2,
+    .galery-3 {
+        display: block;
+    }
+
+    .candy-galery div.image-galery {
+        margin-bottom: 10px;
+    }
+
+    .image-candy, .image-about {
+        width: 95%;
+        height: 300px;
+    }
+
+    .text-candy, .text-about  {
+        margin: 0;
+        margin: 10px 0px;
+    }
+
+    .read-btn, input[type="submit"] {
+        margin: 0;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .sidebar-mobile {
+        position: fixed;
+        right: 0;
+        z-index: 1;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .sidebar-mobile img {
+        width: 30px;
+    }
+
+    .close-button {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
