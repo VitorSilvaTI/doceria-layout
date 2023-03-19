@@ -19,13 +19,7 @@
 div.background-image-properties {
     background-position: center;
     background-size: cover;
-}
-
-/* section geral */
-
-#geral {
-    display: grid; 
-    grid-template-columns: 1fr auto;
+    margin-right: 15px;
 }
 
 /* sidebar mobile */
@@ -413,7 +407,7 @@ footer p {
         position: fixed;
         right: 0;
         z-index: 1;
-        margin: 5px;
+        margin: 15px;
         cursor: pointer;
     }
 
